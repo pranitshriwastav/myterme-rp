@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pranit — Portfolio | Web Developer</title>
+<meta name="description" content="Portfolio of Pranit, a web developer building fast, clean and accessible websites. See projects, skills and contact details." />
+<link rel="stylesheet" href="lu.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo">Pranit<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Toggle menu">&#9776;</button>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <p class="eyebrow">Hello, I'm</p>
+    <h1>Pranit — Web Developer</h1>
+    <p class="lead">I build fast, clean and simple websites with plain HTML, CSS and JavaScript.</p>
+    <div class="actions">
+      <a class="btn" href="#projects">View Projects</a>
+      <a class="btn ghost" href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>I'm a front-end developer who loves minimal design and clean code. I focus on performance,
+      accessibility and small details that make an interface feel good to use.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill" data-level="95"><span>HTML</span><div class="bar"><i></i></div></div>
+      <div class="skill" data-level="90"><span>CSS</span><div class="bar"><i></i></div></div>
+      <div class="skill" data-level="85"><span>JavaScript</span><div class="bar"><i></i></div></div>
+      <div class="skill" data-level="70"><span>UI Design</span><div class="bar"><i></i></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Task Manager</h3>
+        <p>A to-do app with local storage, filters and drag-and-drop ordering.</p>
+        <a href="#">View →</a>
+      </article>
+      <article class="card">
+        <h3>Weather Now</h3>
+        <p>Live weather dashboard using a public API with search and forecast cards.</p>
+        <a href="#">View →</a>
+      </article>
+      <article class="card">
+        <h3>Landing Page</h3>
+        <p>Responsive marketing page built with pure CSS grid and scroll animations.</p>
+        <a href="#">View →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Have a project in mind? Let's talk.</p>
+    <form id="form">
+      <input type="text" id="name" placeholder="Your name" required />
+      <input type="email" id="email" placeholder="Your email" required />
+      <textarea id="msg" rows="4" placeholder="Your message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+      <p id="status" class="status"></p>
+    </form>
+  </section>
+
+  <footer>© <span id="year"></span> Pranit. Built with HTML, CSS &amp; JavaScript.</footer>
+
+  <script src="lu.js"></script>
+</body>
+</html>
